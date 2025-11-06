@@ -38,4 +38,60 @@ btnFilter.forEach(btn => {
   };
 });
 
+// Tunggu hingga seluruh dokumen HTML dimuat
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. Pilih semua tombol filter dan kotak item
+  const filterButtons = document.querySelectorAll(".item-box ul li");
+  const itemBoxes = document.querySelectorAll(".layanan-box .box");
 
+  // 2. Tambahkan event listener untuk setiap tombol filter
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Ambil nama filter dari teks tombol, ubah ke huruf kecil
+      // "All Items" -> "all items", "Physical" -> "physical", dst.
+      const filter = button.textContent.toLowerCase();
+
+      // 3. Atur kelas "Active"
+      // Hapus kelas 'Active' dari semua tombol
+      filterButtons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      // Tambahkan kelas 'Active' ke tombol yang baru saja diklik
+      button.classList.add("active");
+
+      // 4. Lakukan filtering
+      itemBoxes.forEach((box) => {
+        // Ambil data-category dari kotak item
+        const itemCategory = box.getAttribute("data-category");
+
+        // Periksa apakah item harus ditampilkan
+        if (filter === "all items" || filter === itemCategory) {
+          box.style.display = "block"; // Tampilkan item
+        } else {
+          box.style.display = "none"; // Sembunyikan item
+        }
+      });
+    });
+  });
+});
+
+// ...
+button.addEventListener("click", () => {
+    // Ambil nama filter dari teks tombol, ubah ke huruf kecil
+    const filter = button.textContent.toLowerCase(); // <-- Bagian 1
+
+    // ... (kode untuk atur kelas Active) ...
+
+    // 4. Lakukan filtering
+    itemBoxes.forEach((box) => {
+        const itemCategory = box.getAttribute("data-category");
+
+        // Periksa apakah item harus ditampilkan
+        if (filter === "all items" || filter === itemCategory) { // <-- Bagian 2
+            box.style.display = "block"; // Tampilkan item
+        } else {
+            box.style.display = "none"; // Sembunyikan item
+        }
+    });
+});
+// ...
