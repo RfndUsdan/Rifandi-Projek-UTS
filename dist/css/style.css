@@ -252,7 +252,7 @@ body{
 .produk-box .produk-list img:hover{
     background-color: rebeccapurple;
     transform: scale(1.05);
-    
+
 }
 
 .card {
@@ -349,6 +349,7 @@ body{
   border-radius: 10px;
 }
 /* galeri.html */
+
 
 .item-box h1{
     text-align: center;
