@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+    background: rgba(128, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header img {
+    height: 100%;
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Judul di Header */
+.judul {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.judul h1 {
+    font-size: 1.8rem;
+    color: #f1f1f1;
+}
+
+/* Menu Header */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f1f1f1;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #ffc800;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: #111;
+    color: white;
+}
+
+.tierlist-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ====== TIER BAR ====== */
+.tier-row {
+    display: flex;
+    align-items: stretch; /* PENTING: samakan tinggi semua anak */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tier-label {
+    width: 80px;
+    padding: 0 10px; /* tidak pakai padding tinggi */
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* pusatkan vertikal */
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+
+.tier-items {
+    flex: 1;
+    background: #1a1a1a;
+    padding: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ====== CARD TIAP ITEM ====== */
+/* ====== TIER CARD MIRIP GALERY CARD ====== */
+.tier-card {
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+
+    /* Glass Effect dari galery.css */
+    background: rgba(128, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.tier-card:hover {
+    transform: translateY(-8px); /* naik seperti .card */
+}
+
+.tier-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ====== WARNA LABEL TIAP TIER ====== */
+.tier-s .tier-label { background: #ff4b4b; }
+.tier-a .tier-label { background: #ff9f1c; }
+.tier-b .tier-label { background: #ffe227; }
+.tier-c .tier-label { background: #22b573; }
+
