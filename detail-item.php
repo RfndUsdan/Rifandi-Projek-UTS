@@ -42,7 +42,11 @@ $data = $result->fetch_assoc();
 
                 <div class="ability-box">
                     <h3>Deskripsi Item:</h3>
+<<<<<<< HEAD
                     <p><?php echo isset($data['description']) ? $data['description'] : $data['descr']; ?></p>
+=======
+                    <p><?php echo isset($data['description']) ? $data['description'] : $data['desc']; ?></p>
+>>>>>>> d34df4cffdfc47b4ecdc4d0405d2d2f55c2a6f97
                 </div>
             </div>
         <?php } else { ?>

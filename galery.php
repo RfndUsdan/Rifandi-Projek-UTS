@@ -22,7 +22,11 @@ include 'config.php';
         <ul class="menu">
             <li><a href="index.php">Beranda</a></li>
             <li><a href="galery.php">Galery</a></li>
+<<<<<<< HEAD
             <li><a href="tierlist.php">Tierlist</a></li>
+=======
+            <li><a href="tierlist.html">Lineup META</a></li>
+>>>>>>> d34df4cffdfc47b4ecdc4d0405d2d2f55c2a6f97
         </ul>
     </header>
 
