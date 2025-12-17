@@ -22,26 +22,12 @@
       <div class="judul">
         <h1>Magic Chess Gallery</h1>
       </div>
-<<<<<<< HEAD
        <ul class="menu">
             <li><a href="index.php">Beranda</a></li>
             <li><a href="commander.php">Commander</a></li>
             <li><a href="item.php">Item</a></li>
             <li><a href="tierlist.php">Tierlist Commander S4</a></li>
         </ul>
-=======
-      <ul class="menu">
-        <li>
-          <a href="index.php">Beranda</a>
-        </li>
-        <li>
-          <a href="galery.php">Galery</a>
-        </li>
-        <li>
-          <a href="tierlist.html">Tierlist</a>
-        </li>
-      </ul>
->>>>>>> d34df4cffdfc47b4ecdc4d0405d2d2f55c2a6f97
     </header>
 
     <div class="banner">

@@ -26,7 +26,7 @@ $data = $result->fetch_assoc();
 <body>
 
 <header>
-    <a href="galery.php" class="back-btn"><i class="ri-arrow-left-line"></i> Kembali ke Galeri</a>
+    <a href="commander.php" class="back-btn"><i class="ri-arrow-left-line"></i> Kembali ke Galeri</a>
 </header>
 
 <main>
